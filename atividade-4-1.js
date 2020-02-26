@@ -45,6 +45,7 @@ while(n<END){
         }
         if(numdiv>0){
             primo = ''
+            break
         }
         m++
     }
