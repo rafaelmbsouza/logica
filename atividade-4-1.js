@@ -41,9 +41,6 @@ while(n<END){
     primo = 'PRIMO'
     while(m<n){
         if(n%m==0){
-            numdiv++
-        }
-        if(numdiv>0){
             primo = ''
             break
         }
