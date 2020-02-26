@@ -17,23 +17,25 @@
 // 10 PAR
 
 var START = 1;
-var END = 50;
+var END = 50000;
 
+var par_impar = ''
 var n = START;
 var m = 2;
 var numdiv = 0
 var primo = 'PRIMO'
+var par = (START%2==0) // essa linha vai retornar true se o início do código for par
 //n é divisível por m se n%m == 0; MÒDULO É O RESTO DA DIVISÃO (símbolo: %)
 
-while(n<END){
+while(n<=END){
     //teste do par ou impar
-    var par_impar = ''
-    if(n%2==0){
+    if(par){
         par_impar = "PAR"
     }
     else{
         par_impar = "ÍMPAR"
     }
+    par = !par //precisamos trocar a paridade toda vez que mudamos o número
     //teste do PRIMO
     //um número é primo quando ele tem 2 ou menos divisores
     m = 2
