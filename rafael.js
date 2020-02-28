@@ -1,7 +1,5 @@
-var i = 0;
-while(true){
-    console.log("Falae Rapaziada da Arbyte");
-    i++;
-    if(i>100){break}
-    alert(i)
-}
+var ar = ['rafael','ivan','iago','marina','kobus']
+var turma = ['flavio','sergio']
+ar.push('italo')
+var teste = 'carnavrau'
+console.log(teste.slice(3,5))
