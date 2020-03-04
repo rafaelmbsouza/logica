@@ -1,0 +1,14 @@
+[
+    {"id":4236,"nome":"Maria de Lourdes","idade":88,"negativado":true,
+        "conexoes":[
+            37654,
+            12324,
+            1345,
+            567887,
+            23566]},
+    {"id":5885,"nome":"Junior dos Santos","idade":34,"negativado":false,
+        "conexoes":[
+            37654,
+            8573]}
+]
+
