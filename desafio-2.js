@@ -1,11 +1,17 @@
 var rs = require('readline-sync')
-
 var num = rs.questionInt('Insira um número inteiro entre 0 e 10^9 (um bilhão): ')
 
+//1459
+//MIL QUATROCENTOS E CINQUENTA E NOVE
+//8720
+//OITO MIL SETECENTOS E VINTE
+//477477
+//QUATROCENTOS E SETENTA E SETE MIL QUATROCENTOS E SETENTA E SETE
+
+//Cláusula para os engraçadinhos que botarem um número maior que 1bi
 if (num>1e9){
     console.log('Eu falei um número menor que 1 bilhão. Mas vou quebrar essa pra ti. Vou arredondar seu número.')
 }
-
 //estruturando o problema: tudo vai depender da quantidade de algarismos do nosso número.
 //primeiro, fazemos um dicionário:
 //1 = um, 2 = dois... esse dicionario estará descrito abaixo:
@@ -19,7 +25,7 @@ var milhares = ['','mil','milhões','bilhões','trilhões','quadrilhões', 'quin
 
 function constroiCentenas(num3Digitos){
     num3Digitos=num3Digitos.toString().padStart(3,'0')
-    console.log(num3Digitos)
+    //console.log(num3Digitos)
     if(num3Digitos=="100") {return 'cem'}
     if(num3Digitos[1]==1){
         //excecao do dez (onze, doze, treze...)
@@ -52,7 +58,7 @@ function escreveNumeroExtenso(num){
     if (num == 0){return 'zero'}
     var numeroExtenso = ''
     var numQuebradoMilhares = quebraMilhares(num)
-    console.log(numQuebradoMilhares)
+    //console.log(numQuebradoMilhares)
     for (var [index, centena] of numQuebradoMilhares.entries()) {
         numeroExtenso = numeroExtenso + constroiCentenas(centena)+' '+milhares[numQuebradoMilhares.length-index-1]+ ' '
     }
