@@ -1,13 +1,6 @@
 var rs = require('readline-sync')
 var num = rs.questionInt('Insira um número inteiro entre 0 e 10^9 (um bilhão): ')
 
-//1459
-//MIL QUATROCENTOS E CINQUENTA E NOVE
-//8720
-//OITO MIL SETECENTOS E VINTE
-//477477
-//QUATROCENTOS E SETENTA E SETE MIL QUATROCENTOS E SETENTA E SETE
-
 //Cláusula para os engraçadinhos que botarem um número maior que 1bi
 if (num>1e9){
     console.log('Eu falei um número menor que 1 bilhão. Mas vou quebrar essa pra ti. Vou arredondar seu número.')
