@@ -1,0 +1,57 @@
+<!-- OI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula maneira da Arbyte sobre DOM</title>
+</head>
+
+<body style="background-color:aqua" class="bandas">
+    <style>
+        .diferente {
+            background-color:black;
+            color:white
+        }
+    </style>
+    <script>
+        function mudaCor(){
+            document.body.style.backgroundColor= "gray"
+            var elm1 = document.querySelector('ul.bandas li.experimental')
+            var elm2 = document.querySelector('ul.bandas')
+            console.log(elm1.hasAttribute('id'))
+            elm1.removeAttribute('id')
+            console.log(elm1.hasAttribute('id'))
+            var divzera = document.createElement('div')
+            divzera.innerHTML = "Eae essa div foi criada agora" 
+            //elm2.replaceWith(divzera)
+            elm2.remove()
+        }
+        console.log('Falae galera!')
+        setTimeout(mudaCor,1000)
+        //document.body.h1.text = "Mudei o texto"
+    </script>
+    <!--LANSEI A BRABA-->
+    <h1 id="textoDeEntrada">Aula pra entender o DOM</h1>
+    <h1 id="textoDeSaida" class="diferente">Esse é o segundo h1</h1>
+    <p>vlw flws</p>
+    <p class="diferente">Deveria ter alguma coisa</p>
+    <ul class="bandas">
+        <li class="item experimental" id="melhorbanda">Gorillaz</li>
+        <li class="item rock">Led Zeppelin</li>
+        <li class="item mpb">Caetano Veloso</li>
+        <li class="item rock">Green Day</li>
+        <li class="item soul">Stevie Wonder</li>
+    </ul>
+
+    <p class="textinho rock">O rock foi criado na década de 50 por Chuck Berry e seu gingado</p>
+
+    <ul class="membros">
+        <li class="item experimental">Damon Albarn</li>
+        <li class="item rock">Robert Plant</li>
+        <li class="item mpb">Caetano</li>
+        <li class="item rock">Billy</li>
+        <li class="item soul">Stevie</li>
+    </ul>
+</body>
+</html>

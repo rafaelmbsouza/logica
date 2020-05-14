@@ -18,20 +18,21 @@
 // utilizando a função criada.
 //[3,4,5]
 function converteIdadeParaDias(idade){
-    totalDias = idade[0]*365 + idade[1]*30 + idade[2]
+    totalDias = idade[0]*365 + idade[1]*30 + idade[2]*1
     return totalDias
 }
 
 var rs = require('readline-sync')
 
-var velhice = []
+var velhice = rs.question('Insira os anos, meses e dias separados por espaço: ').split(' ')
 
-velhice[0] = rs.questionInt('Quantos anos?')
-velhice[1] = rs.questionInt('Quantos meses?')
-velhice[2] = rs.questionInt('Quantos dias?')
+// velhice[0] = rs.questionInt('Quantos anos?')
+// velhice[1] = rs.questionInt('Quantos meses?')
+// velhice[2] = rs.questionInt('Quantos dias?')
+
 
 console.log(velhice)
-var diasTotais = converteIdadeParaDias(velhice)
+var diasTotais = converteIdadeParaDias('345')
 
 console.log(diasTotais)
 console.log(converteIdadeParaDias(velhice))
