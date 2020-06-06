@@ -49,7 +49,7 @@ Como posso executar mais de uma vez uma parte do meu código?
 O que é uma variável?
 Como eu crio uma nova variável?
 Como eu posso assinalar um novo valor a uma variável?
-O que são tipos primitovos de variáveis em javascript?
+O que são tipos primitivos de variáveis em javascript?
 Como posso checar o tipo de uma variável?
 O que é uma variável booleana?
 Como eu posso comparar duas variáveis?
@@ -65,6 +65,10 @@ Como eu faço para saber se um número é divisível por outro?
 Como eu faço para saber se um número é PRIMO?
 Como eu faço para obter um input de um usuário no terminal?
 Como eu faço para importar um módulo em javascript?
+O que está errado na expressão abaixo?
+    if(name = "Rafael"){
+        console.log('O nome dele é Rafael')
+    }
 O que é JSON?
 Como eu faço para salvar um objeto num arquivo texto no meu computador no formato JSON?
 Como eu faço para ler um JSON armazenado na minha máquina?
@@ -77,10 +81,8 @@ O que é e para que serve uma função?
 O que é um argumento de uma função?
 Para que serve o retorno de uma função?
 Como eu posso checar se os caracteres de uma string são maiúsculos ou minúsculos?
+O que é DOM?
+Onde eu posso ver o output de um console.log() no Chrome?
+Quero escrever o resultado de uma conta que fiz no JS na minha página HTML. Como faço isso?
 
-Erros comuns
-O que está errado na expressão abaixo?
-if(name = "Rafael"){
-    console.log('O nome dele é Rafael')
-}
 

@@ -1,0 +1,41 @@
+<!--Crie  uma  página  HTML  com  um  cabeçalho  h1  e  um  botão.  
+Ao  clicar  no  botão,  altere  o  texto  do cabeçalho para “A mágica continua!”. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de DOM</title>
+</head>
+<body>
+    <h1 id="cabecalho1">Header Bolado</h1>
+    <h2 id="cabecalho2">Headerzinho</h2>
+    <button onclick="mudaQualquerCoisaPeloId('cabecalho1','A mágica continua')" id="botao1">MUDA H1</button>
+    <button onclick="mudaQualquerCoisaPeloId('cabecalho2','FalaeGalera2')" id="botao2">MUDA H2</button>
+    <button onclick="mudaQualquerCoisaPelaTag('title')">MUDA Titulo</button>
+    <hr>
+    <button onclick="quebraFrase()">Gera Frase Quebrada</button>
+    <script>
+        function mudaQualquerCoisaPeloId(id,texto){
+            let elem = document.getElementById(id)
+            elem.innerHTML = texto
+        }
+        function mudaQualquerCoisaPelaTag(tag){
+            let elem = document.getElementsByTagName(tag)[0]
+            let texto = prompt('Por favor, insira o novo texto da tag')
+            elem.innerHTML = texto
+        }
+        function quebraFrase(){
+            let frase = prompt('Insira aqui sua frase').split(' ')
+            let ul = document.createElement('ul')
+            for(let i=0; i<frase.length;i++){
+                let li = document.createElement('li')
+                li.innerText = frase[i]
+                ul.append(li)
+            }
+            document.body.append(ul)
+        }
+    </script>
+</body>
+</html>
